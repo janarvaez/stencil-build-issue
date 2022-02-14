@@ -1,0 +1,52 @@
+{
+  "name": "my-lib",
+  "version": "3.4.0",
+  "description": "Stencil issue repo",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/my-lib/my-lib.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs --prod --no-cache",
+    "stencil": "stencil build --dev --watch --serve",
+    "stencil:start": "stencil build --dev --watch --serve --no-open",
+    "test:once": "stencil test --spec",
+    "test": "stencil test --spec --watchAll",
+    "test:coverage": "stencil test --spec --no-cache --coverage --watchAll=false",
+    "test:e2e": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "lint": "eslint src/**/*{.ts,.tsx}",
+    "clean": "rm -rf build/ dist/ lib/ node_modules/ coverage/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@stencil/core": "2.12.1",
+    "@stencil/eslint-plugin": "^0.4.0",
+    "@stencil/sass": "^1.4.1",
+    "@types/autoprefixer": "^10.2.0",
+    "@types/jest": "^26.0.20",
+    "@types/jsdom": "^16.2.6",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "mutation-observer": "^1.0.3",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "date-fns": "^2.19.0"
+  }
+}

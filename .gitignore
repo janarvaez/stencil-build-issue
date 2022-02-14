@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+
+.stencil/
+.idea/
+.vscode/
+.gradle/
+.versions/
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+dist/
+www/
+loader/
